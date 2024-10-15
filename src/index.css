@@ -15,7 +15,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: #000000;
+    background-color: blue;
     overflow-x: hidden; 
     scroll-behavior: smooth;
 }
