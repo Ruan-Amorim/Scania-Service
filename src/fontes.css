@@ -1,0 +1,18 @@
+
+/* Fonte de Titulos */
+@font-face {
+    font-family: "Anton SC";
+    src: url("../Midias/fontes/Anton_SC/AntonSC-Regular.ttf");
+}
+@font-face {
+    font-family: "Artifika";
+    src: url("../Midias/fontes/Artifika/Artifika-Regular.ttf");
+}
+@font-face {
+    font-family: "Assistant";
+    src: url("../Midias/fontes/Assistant/Assistant/Assistant-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Asul";
+    src: url("../Midias/fontes/Asul/Asul-Regular.ttf");
+}
