@@ -28,11 +28,16 @@ h1,h2,h3,h4,h5 {
     color: #E8F2F5;
 }
 p {
+    font-family: "Sul";
     color: #E8F2F5;
 }
 section {
     width: 100vw;
     min-height: 100vh;
+}
+a:any-link {
+    color: #E8F2F5;
+    text-decoration-line: none;
 }
 /* HOME DO SITE */
 
@@ -121,9 +126,10 @@ section#sobre {
     top: 50%;
     transform: translateY(-50%);
     background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
+    box-shadow: 0 4px 4px 0 #14131373;
 }
 #wallpaper_logo {
-    position: absolute;
+    position: fixed;
     width: 38vw;
     height: 38vw;
     top: 50%;
@@ -133,6 +139,9 @@ section#sobre {
     box-shadow: 5px 9px 4px 0px #00000075;
     border-radius:  0 20px 20px 0;
     object-fit: cover;
+    animation: left 3ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -100% cover 10%;
 }
 
 #container_texto_sobre {
@@ -140,7 +149,6 @@ section#sobre {
     width: 70%;
     height: 100%;
     margin-left: 38%;
-    box-shadow: 0 4px 4px 0 #14131373;
 }
 #container_texto_sobre > p {
     position: absolute;
@@ -151,6 +159,9 @@ section#sobre {
     font-size: clamp(1rem, 1.7vw, 2rem);
     font-family: "Asul";
     float: right;
+    animation: opacity 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -50% cover 50%;
 }
 /* SECTION SERVIÇOS */
 #section_servicos {
@@ -165,24 +176,74 @@ section#sobre {
     background-image: linear-gradient(to right, #070D5D, #0B1490, #0F1BC3);
 }
 #servicos > div {
+    position: relative;
+    display: flex;
     width: 100vw;
     height: 40vh;
     margin: 3% 0;
     background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
+    justify-content: center;
+    align-items: center;
 }
 #servicos > div > ul {
-    display: flex;
-    width: 80%;
-    height: 100%;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;  
+    transform: translateY(calc(50% - 100px));
     margin: auto;
+    text-align: center;
+    justify-content: center;
     list-style: none;
 }
-#servicos > div > ul > li {
+
+#card {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    text-align-last: center;
+    margin: auto;
+}
+.face{
+    position: absolute;
     width: 200px;
     height: 200px;
+    display: flex;
     margin: auto;
+    color: black;
     background: #E8F2F5;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+#back > img {
+    width: 100px;
+    object-fit: cover;
+    margin: 5px auto 70px;
+}
+#back > p {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 0;
+    text-align: center;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+    color: black;
+}
+#front > p {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 0;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: black;
+}
+#front {
+    transform: rotateY(180deg);
+}
+.flip {
+    transform: rotateY(180deg);
 }
 /* SECTION VENDA DE PEÇAS */
 

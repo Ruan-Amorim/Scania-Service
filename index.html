@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="Midias/icons e logo/Logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scania Service</title>
     <link rel="stylesheet" href="src/index.css">
@@ -15,7 +16,7 @@
                 <div>
                     <h1 id="titulo-home">Scania Service</h1>
                     <h2 id="subtitulo-home">Oficina Especializada</h2>
-                    <p id="butao-explore-home">Explore nosso serviços</p>
+                    <a id="butao-explore-home" href="#section_servicos">Explore nosso serviços</a>
                 </div>
             </div>
         </section>
@@ -32,20 +33,26 @@
             <section id="servicos">
                 <div>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li onclick="flip('card','front','back')" id="card">
+                            <div id="front" class="face">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut maiores suscipit sequi commodi eos, laborum officiis accusantium explicabo debitis cupiditate quo in soluta facere sunt numquam voluptate cumque odit aperiam?</p>
+                            </div>
+                            <div id="back" class="face">
+                                <img src="Midias/icons e logo/icone Manutenção preventiva.png" alt="icone Manutenção preventiva">
+                                <p>Manutenção Preventiva</p>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        
                     </ul>
                 </div>
             </section>
         </section>
     </main>
+    <script src="src/main.js"></script>
 </body>
 </html>
