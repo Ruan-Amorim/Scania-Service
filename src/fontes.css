@@ -16,7 +16,7 @@
     font-family: "Asul";
     src: url("../Midias/fontes/Asul/Asul-Regular.ttf");
 }
-/* Fonte de Titulos */
+/* ANIMAÇOES */
 
 @keyframes wallpaper-logo-pc {
     from {
@@ -54,5 +54,15 @@
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }

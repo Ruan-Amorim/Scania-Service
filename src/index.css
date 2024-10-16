@@ -185,19 +185,18 @@ section#sobre {
     align-items: center;
 }
 #servicos > div > ul {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
+    display: inline-flex;
+    width: 75%;
     height: 100%;  
-    transform: translateY(calc(50% - 100px));
-    margin: auto;
+    margin: 10% auto;
     text-align: center;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
-#card {
-    display: flex;
+#card,#card2, #card3, #card4 ,#card5, #card6 {
+    display: inline-flex;
     justify-content: center;
     transform-style: preserve-3d;
     text-align-last: center;
@@ -205,41 +204,46 @@ section#sobre {
 }
 .face{
     position: absolute;
+    display: flex;
     width: 200px;
     height: 200px;
-    display: flex;
-    margin: auto;
     color: black;
     background: #E8F2F5;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    animation: appear 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -50% cover 23%;
 }
-#back > img {
+#back > img, #back2 > img, #back3 > img, #back4 > img, #back5 > img, #back6 > img{
     width: 100px;
     object-fit: cover;
     margin: 5px auto 70px;
 }
-#back > p {
+#back > p, #back2 > p, #back3 > p, #back4 > p, #back5 > p, #back6 > p{
     position: absolute;
-    width: 100%;
-    padding: 10px 0;
+    width: 95%;
+    padding: 20px 0;
     bottom: 0;
     text-align: center;
-    font-size: clamp(1rem, 1.8vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     color: black;
 }
-#front > p {
-    position: absolute;
+#back, #back2, #back3, #back4, #back5, #back6 {
+    transform: translateY(-100px);
+}
+#front > p, #front2 > p, #front3 > p, #front4 > p, #front5 > p, #front6 > p  {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 5px;
+    margin: 5px;
     bottom: 0;
     text-align: center;
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
     color: black;
 }
-#front {
-    transform: rotateY(180deg);
+#front, #front2, #front3, #front4, #front5, #front6{
+    transform: translateY(-100px)  rotateY(180deg);
 }
 .flip {
     transform: rotateY(180deg);
