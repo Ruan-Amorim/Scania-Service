@@ -2,6 +2,10 @@
 @media screen and (min-width: 280px) and (max-width: 500px) {
 
     /* HOME DO SITE */
+    section#home {
+        height: 80vh;
+        min-height: 80vh;
+    }
     #logo_home {
         width: 42%;
         height: 13%;

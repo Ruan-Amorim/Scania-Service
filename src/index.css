@@ -33,7 +33,6 @@ p {
 }
 section {
     width: 100vw;
-    min-height: 100vh;
 }
 a:any-link {
     color: #E8F2F5;
