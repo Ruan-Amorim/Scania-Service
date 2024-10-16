@@ -3,8 +3,8 @@
 
     /* HOME DO SITE */
     section#home {
-        height: 80vh;
-        min-height: 80vh;
+        height: 85vh;
+        min-height: 85vh;
     }
     #logo_home {
         width: 42%;
