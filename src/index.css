@@ -139,7 +139,7 @@ section#sobre {
     box-shadow: 5px 9px 4px 0px #00000075;
     border-radius:  0 20px 20px 0;
     object-fit: cover;
-    animation: left 3ms ease-in-out;
+    animation: wallpaper-logo-pc 3ms ease-in-out;
     animation-timeline: view();
     animation-range: cover -100% cover 10%;
 }

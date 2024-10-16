@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 280px) and (max-width: 500px) {
+
+    /* HOME DO SITE */
+    #logo_home {
+        width: 42%;
+        height: 13%;
+        top: -2.4%;
+        right: 2%;
+    }
+    #Bloco_texto_home {
+        width: 100%;
+        height: 65%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, #00000099, #06093d7F, #070d5d02);
+    }
+
+    /* SECTION SOBRE A EMPRESA */
+    #container_sobre {
+        height: 50%;
+    }
+    #wallpaper_logo {    
+        width: 120%;
+        height: 38vw;
+        top: 50%;
+        transform: translateX(-41vw) translateY(-50%) rotate(-90deg);
+        border-radius: 0 0 30px 30px;
+        animation: wallpaper-logo-cl 3ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -100% cover 10%;
+    }
+    
+    /* SECTION SERVIÇOS */
+    .titulo_banner {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+    #back > p {
+        padding: 20px 0;
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+}
