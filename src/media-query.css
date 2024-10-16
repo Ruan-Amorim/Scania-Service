@@ -10,13 +10,18 @@
     }
     #Bloco_texto_home {
         width: 100%;
-        height: 65%;
+        height: 70%;
         top: auto;
         bottom: 0;
         left: 0;
         background: linear-gradient(to top, #00000099, #06093d7F, #070d5d02);
     }
-
+    #titulo-home {
+        font-size: clamp(2.7rem, 10vw, 5rem);
+    }
+    #subtitulo-home {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
     /* SECTION SOBRE A EMPRESA */
     #container_sobre {
         height: 50%;
@@ -37,7 +42,7 @@
         font-size: clamp(1.2rem, 2vw, 2rem);
     }
     #back > p {
-        padding: 20px 0;
-        font-size: clamp(1.2rem, 2vw, 2rem);
+        padding: 20px 5px;
+        font-size: clamp(1.34rem, 2vw, 3rem);
     }
 }
