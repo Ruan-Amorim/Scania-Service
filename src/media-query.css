@@ -33,7 +33,7 @@
     }
     /* SECTION SOBRE A EMPRESA */
     #container_sobre {
-        min-height: 50%;
+        height: 50%;
     }
     #wallpaper_logo {    
         width: 120%;
@@ -67,6 +67,51 @@
     }
     #back > p, #back2 > p, #back3 > p, #back4 > p, #back5 > p, #back6 > p{
         font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+    
+#front > p, #front2 > p, #front3 > p, #front4 > p, #front5 > p, #front6 > p  {
+    font-size: clamp(1.1rem, 1.3vw, 2rem);
+}
+    /* SECTION Entrar em Contato */
+    #container_card_entrar_em_contato {
+        width: 80vw;
+        height: 75%;
+    }
+    #card_entrar_em_contato {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #card_entrar_em_contato > img {
+        display: inline-flex;
+        width: auto;
+        height: 40%;
+        margin: auto;
+        scale: 0.7;
+        text-align: center;
+        justify-content: baseline;
+        object-fit: cover;
+    }
+    #text_entrar_em_contato {
+        width: 100%;
+        min-height: 60%;
+        animation: direita 3s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -80% cover 15%;
+    }
+    #text_entrar_em_contato > div > p {
+        font-family: "Arimo";
+        animation: appear 3s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -180% cover 0%;
+    }
+    #text_entrar_em_contato > div > #texto{
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
+    }       
+    #button_entrar_em_contato {
+        margin-top: 20%;
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
     }
 }
 @media screen and (min-width: 500px) and (max-width: 600px) {
