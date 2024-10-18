@@ -90,7 +90,13 @@ const Produtos = [{
         },
     ],
 }];
-
+// Função para Scroll
+window.clickScroll = function clickScroll() {
+    document.body.scrollTo({
+        top: window.innerHeight * 2,
+        behavior: 'smooth',
+    });
+}
 // Função para virar as cartas
 window.flip = function flip(card, front1, back2) {
     let item = window.document.getElementById(card);
@@ -106,3 +112,4 @@ window.flip = function flip(card, front1, back2) {
         back.style.zIndex = 0;
     }
 }
+

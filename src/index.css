@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5 {
     color: #E8F2F5;
 }
 p {
-    font-family: "Sul";
+    font-family: "Asul";
     color: #E8F2F5;
 }
 section {
@@ -261,8 +261,87 @@ section#sobre {
 .flip {
     transform: rotateY(180deg);
 }
+
+/* SECTION GOOGLE MAPS */
+#Google_Maps {
+    margin: 5vh 0;
+}
+#container_google_maps {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+#container_google_maps > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #070D63, #0B1496, #0E1AC9);
+    justify-content: center;
+    align-items: center;
+}
+#container_google_maps > a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#container_google_maps > div > h2 {
+    text-align: center;
+    margin: 1.5% auto;
+    font-family: "Arimo";
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    color: whitesmoke;
+}
+#container_google_maps > div > p {
+    width: 90%;
+    text-align: center;
+    margin: 1.5% auto;
+    font-family: "Asul";
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    color: rgb(221, 220, 220);
+}
+.texto_img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 2% 0;
+    text-align: center;
+    font-family: "Anton SC";
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 5vw, 10rem);
+    background: rgba(245, 245, 245, 0.664);
+    color: #0e1bc9c2;
+    z-index: 10;
+    transition: 1s;
+}
+#container_google_maps > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+#container_google_maps > a:hover .texto_img {
+    opacity: 1;
+    transition: 1s;
+}
+#container_google_maps > a > img:hover {
+    filter: blur(2px);
+    z-index: 0;
+    transition: 1s;
+}
+
 /* SECTION VENDA DE PEÇAS */
 #venda_de_pecas {
+    display: none;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -363,6 +442,9 @@ section#sobre {
     height: 100vh;
     position: relative;
 }
+#entre_em_contato > .titulo_banner {
+    background: none;
+}
 #container_card_entrar_em_contato {
     position: absolute;
     display: flex;
@@ -371,7 +453,7 @@ section#sobre {
     top: 50%;
     left: 50%;
     background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
-    transform: translate(-50%,calc(-50% + 10px));
+    transform: translate(-50%,-50%);
     justify-content: center;
     align-items: center;
     border-radius: 30px;
