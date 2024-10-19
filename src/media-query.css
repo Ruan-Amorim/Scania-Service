@@ -1,0 +1,186 @@
+
+@media screen and (min-width: 280px) and (max-width: 499px) {
+
+    /* HOME DO SITE */
+    section#home {
+        height: auto;
+        min-height: 88vh;
+    }
+    #logo_home {
+        width: 42%;
+        height: 13%;
+        top: -2.4%;
+        right: 2%;
+    }
+    #Bloco_texto_home {
+        width: 100%;
+        height: 70%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, #00000099, #06093d7F, #070d5d02);
+    }
+    #titulo-home {
+        font-size: clamp(3.5rem, 10vw, 5rem);
+    }
+    #subtitulo-home {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    #butao-explore-home {
+        padding: 15px 13px;
+        margin: 2.5vh auto;
+        font-size: clamp(1.3rem, 1.5vw, 2rem);
+    }
+    /* SECTION SOBRE A EMPRESA */
+    #container_sobre {
+        height: 50%;
+    }
+    #wallpaper_logo {    
+        width: 120%;
+        height: 38vw;
+        top: 50%;
+        transform: translateX(-41vw) translateY(-50%) rotate(-90deg);
+        border-radius: 0 0 30px 30px;
+        animation: wallpaper-logo-cl 3ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -100% cover 15%;
+    }
+    #container_texto_sobre > p {
+        font-size: clamp(1.1rem, 1.7vw, 2rem);
+    }
+    /* SECTION SERVIÇOS */
+    #servicos > div {
+        width: 100vw;
+        height: 90vh;
+        margin: 5% 0;
+    }
+    #servicos > div > ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #card, #card2, #card3, #card4, #card5, #card6 {
+        margin: 14.80vh 50vw;
+    } 
+    .titulo_banner {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+    #back > p, #back2 > p, #back3 > p, #back4 > p, #back5 > p, #back6 > p{
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+    
+#front > p, #front2 > p, #front3 > p, #front4 > p, #front5 > p, #front6 > p  {
+    font-size: clamp(1.1rem, 1.3vw, 2rem);
+}
+    /* SECTION Entrar em Contato */
+    #container_card_entrar_em_contato {
+        width: 80vw;
+        height: 75%;
+    }
+    #card_entrar_em_contato {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #card_entrar_em_contato > img {
+        display: inline-flex;
+        width: auto;
+        height: 40%;
+        margin: auto;
+        scale: 0.7;
+        text-align: center;
+        justify-content: baseline;
+        object-fit: cover;
+    }
+    #text_entrar_em_contato {
+        width: 100%;
+        min-height: 60%;
+        animation: direita 3s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -80% cover 15%;
+    }
+    #text_entrar_em_contato > div > p {
+        font-family: "Arimo";
+        animation: appear 3s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -180% cover 0%;
+    }
+    #text_entrar_em_contato > div > #texto{
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
+    }       
+    #button_entrar_em_contato {
+        margin-top: 20%;
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+
+    /* HOME DO SITE */
+    section#home {
+        height: auto;
+        min-height: 88vh;
+    }
+    #logo_home {
+        width: 42%;
+        height: 13%;
+        top: -1%;
+        right: 2%;
+    }
+    #Bloco_texto_home {
+        width: 100%;
+        height: 70%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, #00000099, #06093d7F, #070d5d02);
+    }
+    #titulo-home {
+        font-size: clamp(3.5rem, 10vw, 5rem);
+    }
+    #subtitulo-home {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    #butao-explore-home {
+        padding: 15px 13px;
+        margin: 2.5vh auto;
+        font-size: clamp(1.3rem, 1.5vw, 2rem);
+    }
+    /* SECTION SOBRE A EMPRESA */
+    #container_sobre {
+        height: 50%;
+    }
+    #wallpaper_logo {    
+        width: 100%;
+        height: 38vw;
+        top: 50%;
+        transform: translateX(-31vw) translateY(-50%) rotate(-90deg);
+        border-radius: 0 0 30px 30px;
+        animation: wallpaper-logo-cl 3ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover -100% cover 15%;
+    }
+    #container_texto_sobre > p {
+        font-size: clamp(1.1rem, 1.7vw, 2rem);
+    }
+    /* SECTION SERVIÇOS */
+    #servicos > div {
+        width: 100vw;
+        height: 100vh;
+        margin: 5% 0;
+    }
+    #servicos > div > ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #card, #card2, #card3, #card4, #card5, #card6 {
+        margin: 16.45vh 50vw;
+    } 
+    .titulo_banner {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+    #back > p, #back2 > p, #back3 > p, #back4 > p, #back5 > p, #back6 > p{
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+}

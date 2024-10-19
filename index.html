@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="Midias/icons e logo/Logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scania Service</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/fontes.css">
+    <link rel="stylesheet" href="src/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pin_drop" />
+</head>
+<body>
+    <section id="home">
+        <img id="logo_home" src="Midias/icons e logo/MARCA-D-AGUA.png" alt="logo da empresa Scania Service">
+        <div id="Bloco_texto_home">
+            <div>
+                <h1 id="titulo-home">Scania Service</h1>
+                <h2 id="subtitulo-home">Oficina Especializada</h2>
+                <p onclick="clickScroll()" id="butao-explore-home">Explore nosso serviços</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        
+        <section id="sobre">
+            <div id="container_sobre">
+                <img id="wallpaper_logo" src="Midias/image/ARTE-PARA-PERFIL-3D-PERFIL-03.jpg" alt="Wallpaper logo da empresa Scania Service">
+                <div id="container_texto_sobre">
+                    <p>Na Scania Express, oferecemos uma ampla gama de serviços especializados para caminhões, assegurando que seu veículo esteja sempre em perfeitas condições de rodagem. Nosso time de especialistas está preparado para oferecer manutenção completa e reposição de peças de alta qualidade. Confira nossa lista de serviços:</p>
+                </div>
+            </div>
+        </section>
+        <section id="section_servicos">
+            <h3 class="titulo_banner">nossos serviços</h3>
+            <section id="servicos">
+                <div>
+                    <ul>
+                        <li onclick="flip('card','front','back')" id="card">
+                            <div id="front" class="face">
+                                <p>Verificações regulares para evitar quebras inesperadas.<br> Inspeção de fluidos, filtros, correias e outros componentes essenciais.</p>
+                            </div>
+                            <div id="back" class="face">
+                                <img src="Midias/icons e logo/icone Manutenção preventiva.png" alt="icone Manutenção preventiva">
+                                <p>Manutenção Preventiva</p>
+                            </div>
+                        </li>
+                        <li onclick="flip('card2','front2','back2')" id="card2">
+                            <div id="front2" class="face">
+                                <p>Substituição de Òleo do motor, óleo de transmissão e filtros. <br> Uso de Lubrificante de alta performace para otimização do desempenho.</p>
+                            </div>
+                            <div id="back2" class="face">
+                                <img src="Midias/icons e logo/ícone de troca de óleo e filtros.png" alt="ícone de troca de óleo e filtros">
+                                <p>Troca de Òleo e Filtros</p>
+                            </div>
+                        </li>
+                        <li onclick="flip('card3','front3','back3')" id="card3">
+                            <div id="front3" class="face">
+                                <p>Inspeção e substituição do sitema de freio. <br> Verificação de todo o sistema hidráulico para garantir a segurança nas estradas.</p>
+                            </div>
+                            <div id="back3" class="face">
+                                <img src="Midias/icons e logo/icone Revisão completa do sistema de freios.png" alt="ícone Revisão completa do sistema de freios">
+                                <p>Revisão completa do sistema de Freios</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li onclick="flip('card4','front4','back4')" id="card4">
+                            <div id="front4" class="face">
+                                <p>Ajuste preciso para evitar degaste irregular dos pneus e melhorar a eficiência do combustível.</p>
+                            </div>
+                            <div id="back4" class="face">
+                                <img src="Midias/icons e logo/ícone de balanceamento e alinhamento de rodas .png" alt="ícone de balanceamento e alinhamento de rodas">
+                                <p>Alinhamento e Balanceamanto de Rodas</p>
+                            </div>
+                        </li>
+                        <li onclick="flip('card5','front5','back5')" id="card5">
+                            <div id="front5" class="face">
+                                <p>Avaliação e raparo de amortecedores, molas e barras estabilizadoras.</p>
+                            </div>
+                            <div id="back5" class="face">
+                                <img src="Midias/icons e logo/icone de revisão de suspensão.png" alt="icone de revisão de suspensão">
+                                <p>Revisão de Suspensão</p>
+                            </div>
+                        </li>
+                        <li onclick="flip('card6','front6','back6')" id="card6">
+                            <div id="front6" class="face">
+                                <p>Leitura e análise de códigos de erro com ferramentas de diagnóstico avançadas.</p>
+                            </div>
+                            <div id="back6" class="face">
+                                <img src="Midias/icons e logo/icone Diagnóstico Eletrônico.png" alt="icone Diagnóstico Eletrônico">
+                                <p>Diagnóstico Eletrônico</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <h2 class="titulo_banner">entre em contato</h2>
+        <section id="Google_Maps">
+            <div id="container_google_maps">
+                <div>
+                    <h2>Como nos encontrar?</h2>
+                    <p>Clique na imagem para ver a rota mais proxima e nos visitar pessoalmente.</p>
+                </div>
+                <a href="https://maps.app.goo.gl/o4EB47yCjrVrJysL8" target="_blank">
+                    <img src="https://cdn.mos.cms.futurecdn.net/bXLBUT8EVwWDBNK5Kancqb-1200-80.jpg" alt="imagem de uma pessoa usando o google maps no celular">
+                    <p class="texto_img">clique</p>
+                </a>
+            </div>
+        </section>
+        <section id="venda_de_pecas">
+            <div id="container_vendas">
+                <div id="navBar_vendas">
+                    <h4 id="Titulo_Vendas">Nossos Produtos</h4>
+                    <ul>
+                        <li>Peneu</li>
+                        <li>Freio</li>
+                        <li>Motor</li>
+                        <li>Amortecedor</li>
+                        <li>Caixa de Câmbio</li>
+                    </ul>
+                </div>
+                <div id="produtos">
+                    <ul>
+                        <li>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div id="container">
+                <div id="bloco-A">
+                    <div id="container_aside_texto">
+
+                    </div>
+                    <div id="container_aside_images">
+
+                    </div>
+                </div>
+                <div id="bloco-B">
+
+                </div>
+            </div>
+        </aside>
+        <section id="entre_em_contato">
+            <div id="container_card_entrar_em_contato">
+                <div id="card_entrar_em_contato">
+                    <img src="Midias/icons e logo/Logo.png" alt="logo scania">
+                    <div id="text_entrar_em_contato">
+                        <div>
+                            <p id="texto">Para inciar a contratação de nossos serviços, clique no botão e fale com um de nossos atendentes qualificados.</p>
+                            <a id="button_entrar_em_contato" href="https://wa.me/556199759408" target="_blank">Entrar em Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contato">
+            <div id="background"></div>
+            <div id="container_contato">
+                <h2>Contatos:</h2>
+                <a href="https://wa.me/5561999759408" target="_blank" rel="noopener noreferrer"><img class="icon_whatsapp" src="https://static.vecteezy.com/system/resources/previews/018/930/564/non_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="logo do whatsapp"> (61) 9 99759408</a>
+                <a href="http://wa.me/61983853881" target="_blank" rel="noopener noreferrer"><img class="icon_whatsapp" src="https://static.vecteezy.com/system/resources/previews/018/930/564/non_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="logo do whatsapp"> (61) 9 83853881 </a>
+                <a  href="https://maps.app.goo.gl/o4EB47yCjrVrJysL8" target="_blank" rel="noopener noreferrer">
+                    Rua - A Quadra 03 Lote 25 Jardim Planalto Luziãnia (GO) Cep: 72850000</a>
+            </div>
+        </div>
+        <div id="redes">
+            <div>
+                <a href="#" target="_blank">
+                    <img class="image_logo" src="" alt="logo do intagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img class="image_logo" src="" alt="logo do facebook">
+                </a>
+            </div>
+            <a href="#" target="_blank">scaniaservice@gmail.com</a>
+        </div>
+    </footer>
+    <script src="src/main.js"></script>
+</body>
+</html>

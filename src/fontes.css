@@ -1,0 +1,98 @@
+
+/* Fonte de Titulos */
+@font-face {
+    font-family: "Anton SC";
+    src: url("../Midias/fontes/Anton_SC/AntonSC-Regular.ttf");
+}
+@font-face {
+    font-family: "Artifika";
+    src: url("../Midias/fontes/Artifika/Artifika-Regular.ttf");
+}
+@font-face {
+    font-family: "Assistant";
+    src: url("../Midias/fontes/Assistant/Assistant/Assistant-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Asul";
+    src: url("../Midias/fontes/Asul/Asul-Regular.ttf");
+}
+@font-face {
+    font-family: "Archivo";
+    src: url("../Midias/fontes/Archivo,Arimo/Archivo/Archivo-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+    font-family: "Arimo";
+    src: url("../Midias/fontes/Archivo,Arimo/Arimo/Arimo-VariableFont_wght.ttf");
+}
+/* ANIMAÇOES */
+
+@keyframes wallpaper-logo-pc {
+    from {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(-50%);
+    }
+}
+@keyframes wallpaper-logo-cl {
+    from {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(-50%) rotate(-90deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-41vw) translateY(-50%) rotate(-90deg);
+    }
+}
+@keyframes right {
+    from {
+        opacity: 0;
+        transform: translateX(100vw) translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(-50%);
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes direita {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes baixo {
+    from {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(100vh);
+    }
+    to {
+        opacity: 1;
+        scale: 0.65;
+        transform: translateY(0);
+    }
+}
