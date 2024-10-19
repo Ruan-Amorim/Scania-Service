@@ -69,7 +69,7 @@ section#home {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #00000099, #06093d7F, #070d5d02);
+    background: linear-gradient(to right, #00000099, #06093d8a, #070D5D02);
     text-align: center;
     justify-content: center;
     white-space: nowrap;
@@ -543,7 +543,7 @@ div#background {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #070d5df5, #0B1490f5, #0D18A9f5, #0E19B6f5, #0F1BC3f5);
+    background: linear-gradient(to right, #070d5def, #0B1490ef, #0D18A9ef, #0E19B6ef, #0f1bc3ef);
     z-index: 2;
 }
 #container_contato {
