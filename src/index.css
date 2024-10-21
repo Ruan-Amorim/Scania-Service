@@ -266,7 +266,7 @@ aside {
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin: 10vh 0;
+    margin:  0 0 10vh 0;
     background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
 }
 aside > #container {
