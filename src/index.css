@@ -266,6 +266,7 @@ aside {
     position: relative;
     width: 100vw;
     height: 100vh;
+    margin: 10vh 0;
     background-image: linear-gradient(to right, #171718 50%, #38383A 99%, #3D3E40 100%);
 }
 aside > #container {
@@ -286,20 +287,31 @@ aside > #container > #bloco-A {
 }
 #container_aside_texto {
     position: relative;
+    display: flex;
     width: 100%;
     height: 50%;
     background-color: #E8F2F5;
 }
 #container_aside_texto > p {
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 100%;
     padding: 10px;
     color: #000000;
+    float: left;
+    font-family: "Archivo";
     font-size: clamp(1rem, 1.5vw, 4rem);
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+img#icon-caminhao {
+    position: absolute;
+    height: 100%;
+    top: -5%;
+    right: 5%;
+    object-fit: cover;
+    z-index: 10;
 }
 #container_aside_images {
     position: relative;
@@ -632,7 +644,7 @@ div#background {
     display: flex;
     width: 100%;
     margin: 0.5vh 0;
-    font-family: "Archiva";
+    font-family: "Archivo";
     justify-content: center;
     align-items: center;
 }
@@ -663,7 +675,7 @@ footer > #redes > div {
 }
 footer > #redes > a {
     display: flex;
-    font-family: "Archiva";
+    font-family: "Archivo";
     justify-content: center;
     align-items: center;
 }

@@ -113,6 +113,29 @@
         margin-top: 20%;
         font-size: clamp(1.5rem, 1.5vw, 2rem);
     }
+    /* ASIDE */
+    aside {
+        width: 100vw;
+        height: 85vh;
+        margin: 10vh 0;
+    }
+    aside > #container {
+        width: 100vw;
+        height: 80%;
+    }
+    #container_aside_texto > p {
+        width: 100%;
+        height: 50%;
+        transform: translateY(60%);
+        float: left;
+    }
+    img#icon-caminhao {
+        width: 40%;
+        height: auto;
+        top: auto;
+        bottom: 60%;
+        right: 5%;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 600px) {
 
